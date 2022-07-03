@@ -57,7 +57,7 @@ export default function Home() {
           .catch(error => console.log('error', error));
       }
       else
-        console.log(window.location.origin.replace('localhost', '127.0.0.1') + '//api/getM3u?sid=' + theUser.sid + '_' + theUser.id + '&sname=' + theUser.sName + '&tkn=' + token + '&ent=' + theUser.entitlements.map(x => x.pkgId).join('_'));
+        console.log(window.location.origin.replace('localhost', '127.0.0.1') + '/api/getM3u?sid=' + theUser.sid + '_' + theUser.id + '&sname=' + theUser.sName + '&tkn=' + token + '&ent=' + theUser.entitlements.map(x => x.pkgId).join('_'));
     }
     else
       setDynamicUrl("");
