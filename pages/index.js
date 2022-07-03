@@ -38,7 +38,7 @@ export default function Home() {
         console.log('mko');
         console.log(process.env.REACT_APP_M3U_FUNCTION_BASE_URL);
         var raw = JSON.stringify({
-          "long_url": window.location.origin.replace('localhost', '127.0.0.1') + '/api/getM3u?sid=' + theUser.sid + '_' + theUser.acStatus[0] + '&id=' + theUser.id + '&sname=' + theUser.sName + '&tkn=' + token + '&ent=' + theUser.entitlements.map(x => x.pkgId).join('_'));
+          "long_url": window.location.origin.replace('localhost', '127.0.0.1') + '/api/getM3u?sid=' + theUser.sid + '_' + theUser.acStatus[0] + '&id=' + theUser.id + '&sname=' + theUser.sName + '&tkn=' + token + '&ent=' + theUser.entitlements.map(x => x.pkgId).join('_')
         });
 
         var requestOptions = {
@@ -294,7 +294,7 @@ export default function Home() {
           <Grid.Row>
             <Grid.Column></Grid.Column>
             <Grid.Column textAlign='center' computer={8} tablet={12} mobile={16}>
-              <a href="https://github.com/baadshah0786/Tata-Play-Web" target="_blank" rel="noreferrer">View source code on Github</a>
+              <a href="https://github.com/saifshaikh1805/tata-sky-m3u" target="_blank" rel="noreferrer">View source code on Github</a>
             </Grid.Column>
             <Grid.Column></Grid.Column>
           </Grid.Row>
