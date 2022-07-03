@@ -163,7 +163,7 @@ const generateM3u = async (ud) => {
             let chansList = userChanDetails.list;
             //console.log(chansList);
             if (chansList.length > 0) {
-                m3uStr = '#EXTM3U    x-tvg-url="http://botallen.live/epg.xml.gz"\n\n';
+                m3uStr = '#EXTM3U    x-tvg-url="http://indtv.me/guide.gz"\n\n';
                 for (let i = 0; i < chansList.length; i++) {
                     m3uStr += '#EXTINF:-1  tvg-id=' + chansList[i].channelMeta.id.toString() + '  ';
                     m3uStr += 'tvg-logo=' + chansList[i].channelMeta.logo + '   ';
